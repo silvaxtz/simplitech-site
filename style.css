@@ -6,9 +6,9 @@ body {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 400px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 32px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,54 +17,47 @@ body {
 
 .logo-area {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 22px;
-  margin-bottom: 26px;
+  gap: 14px;
+  margin-bottom: 34px;
 }
 
-.logo-svg svg {
-  height: 80px;
-  width: 80px;
-  display: block;
+.logo-img {
+  width: 62px;
+  height: auto;
 }
 
 .logo-title {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  letter-spacing: -1px;
   color: #fff;
-  text-align: left;
 }
 
 .main-title {
-  font-size: 2.4rem;
+  font-size: 1.74rem;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: left;
-  width: 100%;
-  line-height: 1.12;
+  text-align: center;
+  line-height: 1.15;
 }
 
 .subtitle {
-  font-size: 1.18rem;
-  margin-bottom: 32px;
-  text-align: left;
-  width: 100%;
-  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .whatsapp-btn {
   background: #17c978;
   color: #fff;
   font-weight: bold;
-  border-radius: 18px;
-  padding: 22px 0;
+  border-radius: 14px;
+  padding: 16px 0;
   text-decoration: none;
-  font-size: 1.22rem;
-  text-align: center;
+  font-size: 1.15rem;
   width: 100%;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
+  text-align: center;
   box-shadow: 0 2px 12px rgba(15,175,123,0.10);
   transition: background 0.2s, box-shadow 0.2s;
   display: block;
@@ -76,104 +69,69 @@ body {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 16px;
   width: 100%;
-  margin-bottom: 36px;
-  margin-top: 8px;
+  margin-bottom: 30px;
 }
+
 .service-card {
   background: rgba(255,255,255,0.07);
-  border-radius: 22px;
+  border-radius: 16px;
   border: 2px solid rgba(255,255,255,0.18);
-  padding: 38px 10px 18px 10px;
+  padding: 24px 8px 12px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
-  font-size: 1.12rem;
-  font-weight: 400;
+  gap: 12px;
+  font-size: 1rem;
   text-align: center;
-  transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  min-height: 170px;
-  justify-content: center;
+  min-height: 110px;
+  transition: background 0.18s, border 0.18s;
 }
 .service-card:hover {
-  transform: scale(1.045) translateY(-3px);
-  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
   background: rgba(255,255,255,0.13);
   border-color: #17c978;
 }
-.icon {
-  margin-bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .icon-img {
-  width: 56px;
-  height: 56px;
-  margin-bottom: 8px;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 4px;
   object-fit: contain;
 }
+
 .cta {
-  font-size: 1.38rem;
+  font-size: 1.12rem;
   font-weight: bold;
   text-align: center;
   color: #fff;
-  margin-top: 36px;
-  margin-bottom: 52px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-/* MOBILE AJUSTES */
-@media (max-width: 900px) {
-  .services {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
+@media (min-width: 600px) {
   .container {
-    max-width: 98vw;
-    padding: 18px 2vw;
-  }
-  .logo-area {
-    gap: 12px;
-  }
-  .logo-svg svg {
-    height: 54px;
-    width: 54px;
-  }
-  .logo-title {
-    font-size: 1.7rem;
+    max-width: 600px;
+    padding: 44px 0;
   }
   .main-title {
-    font-size: 1.18rem;
-    text-align: left;
-    line-height: 1.12;
+    font-size: 2.2rem;
   }
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 22px;
+  .logo-title {
+    font-size: 2.8rem;
   }
-  .whatsapp-btn {
-    font-size: 1.05rem;
-    padding: 16px 0;
-    border-radius: 14px;
-    margin-bottom: 28px;
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
   }
   .service-card {
-    min-height: 120px;
-    padding: 28px 8px 16px 8px;
-    font-size: 1rem;
-    gap: 12px;
+    font-size: 1.1rem;
+    min-height: 140px;
+    padding: 32px 10px 18px 10px;
   }
   .icon-img {
-    height: 42px;
-    width: 42px;
-  }
-  .cta {
-    font-size: 1.12rem;
-    margin-top: 18px;
-    margin-bottom: 32px;
+    width: 54px;
+    height: 54px;
   }
 }
