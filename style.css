@@ -6,58 +6,59 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 32px 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 34px;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
 .logo-img {
-  width: 62px;
-  height: auto;
+  width: 68px;
+  height: 68px;
+  display: block;
 }
 
 .logo-title {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #fff;
+  letter-spacing: -1px;
 }
 
 .main-title {
-  font-size: 1.74rem;
+  font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center;
-  line-height: 1.15;
+  line-height: 1.08;
 }
 
 .subtitle {
-  font-size: 1rem;
-  margin-bottom: 24px;
-  text-align: center;
+  font-size: 1.18rem;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .whatsapp-btn {
-  background: #17c978;
+  background: #19c37d;
   color: #fff;
   font-weight: bold;
-  border-radius: 14px;
-  padding: 16px 0;
+  border-radius: 18px;
+  padding: 22px 0;
   text-decoration: none;
-  font-size: 1.15rem;
-  width: 100%;
-  margin-bottom: 32px;
+  font-size: 1.22rem;
   text-align: center;
+  width: 100%;
+  margin-bottom: 38px;
   box-shadow: 0 2px 12px rgba(15,175,123,0.10);
   transition: background 0.2s, box-shadow 0.2s;
   display: block;
@@ -69,69 +70,90 @@ body {
 
 .services {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
+  margin-top: 12px;
 }
 
 .service-card {
   background: rgba(255,255,255,0.07);
-  border-radius: 16px;
-  border: 2px solid rgba(255,255,255,0.18);
-  padding: 24px 8px 12px 8px;
+  border-radius: 18px;
+  border: 2px solid rgba(255,255,255,0.25);
+  padding: 34px 10px 18px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  font-size: 1rem;
+  gap: 18px;
+  font-size: 1.07rem;
+  font-weight: 400;
   text-align: center;
-  min-height: 110px;
-  transition: background 0.18s, border 0.18s;
+  transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
+  min-height: 170px;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
 .service-card:hover {
+  transform: scale(1.045) translateY(-3px);
+  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
   background: rgba(255,255,255,0.13);
-  border-color: #17c978;
+  border-color: #19c37d;
 }
 
 .icon-img {
-  width: 44px;
-  height: 44px;
-  margin-bottom: 4px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
   object-fit: contain;
 }
 
 .cta {
-  font-size: 1.12rem;
+  font-size: 1.44rem;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   color: #fff;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 36px;
+  margin-bottom: 52px;
 }
 
-@media (min-width: 600px) {
+/* MOBILE */
+@media (max-width: 900px) {
   .container {
-    max-width: 600px;
-    padding: 44px 0;
+    max-width: 98vw;
+    padding: 18px 2vw;
+    align-items: center;
   }
   .main-title {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.12;
   }
   .logo-title {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
+  }
+  .logo-img {
+    width: 40px;
+    height: 40px;
   }
   .services {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
   .service-card {
-    font-size: 1.1rem;
-    min-height: 140px;
-    padding: 32px 10px 18px 10px;
+    min-height: 120px;
+    padding: 28px 8px 16px 8px;
+    font-size: 1rem;
+    gap: 12px;
   }
   .icon-img {
-    width: 54px;
-    height: 54px;
+    height: 38px;
+    width: 38px;
+  }
+  .cta {
+    font-size: 1.12rem;
+    margin-top: 18px;
+    margin-bottom: 32px;
+    text-align: center;
   }
 }
