@@ -1,28 +1,20 @@
-/* Reset e fonte */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Inter', Arial, sans-serif;
   background: linear-gradient(135deg, #1656a0 0%, #16b6a0 100%);
   color: #fff;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Container principal */
 .container {
   max-width: 700px;
   margin: 0 auto;
   padding: 40px 16px 0 16px;
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
 }
 
-/* Logo e título */
 .logo-area {
   display: flex;
   align-items: center;
@@ -40,7 +32,6 @@ body {
   letter-spacing: -1px;
 }
 
-/* Títulos */
 .main-title {
   font-size: 2.2rem;
   font-weight: bold;
@@ -55,7 +46,6 @@ body {
   line-height: 1.3;
 }
 
-/* Botão WhatsApp */
 .whatsapp-btn {
   background: #19c37d;
   color: #fff;
@@ -79,7 +69,6 @@ body {
   transform: scale(1.03);
 }
 
-/* Cards de serviços */
 .services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -89,21 +78,19 @@ body {
   margin-top: 10px;
 }
 
-/* Card com animação */
 .service-card {
   background: rgba(255,255,255,0.07);
   border-radius: 18px;
   border: 2px solid rgba(255,255,255,0.22);
-  padding: 30px 10px 16px 10px;
+  padding: 30px 8px 16px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  font-size: 1.05rem;
+  gap: 12px;
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
   min-height: 140px;
-  justify-content: center;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   position: relative;
   transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
@@ -118,7 +105,6 @@ body {
   background: rgba(255,255,255,0.13);
   border-color: #19c37d;
 }
-/* Animação com delay diferente para cada card */
 .services .service-card:nth-child(1) { --delay: 0.08s; }
 .services .service-card:nth-child(2) { --delay: 0.22s; }
 .services .service-card:nth-child(3) { --delay: 0.36s; }
@@ -132,21 +118,21 @@ body {
 }
 
 .icon-img {
-  width: 44px;
-  height: 44px;
-  margin-bottom: 10px;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 8px;
   object-fit: contain;
 }
 
 .service-title {
-  font-size: 1rem;
+  font-size: 0.94rem;
   font-weight: 400;
   line-height: 1.18;
 }
 
 /* Chamada final */
 .cta {
-  font-size: 1.35rem;
+  font-size: 1.26rem;
   font-weight: bold;
   text-align: left;
   color: #fff;
@@ -172,7 +158,7 @@ body {
   border: none;
 }
 
-/* MOBILE */
+/* MOBILE: Cards continuam lado a lado! */
 @media (max-width: 900px) {
   .container {
     max-width: 100vw;
@@ -183,50 +169,49 @@ body {
     font-size: 1.2rem;
   }
   .main-title {
-    font-size: 1.16rem;
+    font-size: 1.08rem;
     text-align: left;
     max-width: 96vw;
   }
   .logo-img {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
   .services {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-bottom: 20px;
-    margin-top: 8px;
+    grid-template-columns: repeat(4, 1fr); /* Mantém lado a lado! */
+    gap: 10px;
+    margin-bottom: 18px;
+    margin-top: 6px;
     width: 100%;
-    align-items: center;
   }
   .service-card {
-    min-width: 90vw;
-    max-width: 98vw;
-    min-height: 96px;
-    padding: 16px 4px 12px 4px;
-    font-size: 0.93rem;
-    gap: 8px;
-    margin-bottom: 12px;
+    min-width: 0;
+    max-width: 100vw;
+    min-height: 90px;
+    padding: 10px 2px 10px 2px;
+    font-size: 0.87rem;
+    gap: 6px;
+    margin-bottom: 0;
   }
   .icon-img {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
+    margin-bottom: 4px;
   }
   .service-title {
-    font-size: 0.96rem;
-    line-height: 1.22;
+    font-size: 0.81rem;
+    line-height: 1.14;
     white-space: normal;
     word-break: break-word;
   }
   .cta {
-    font-size: 1.02rem;
+    font-size: 0.98rem;
     text-align: center;
-    margin-top: 14px;
-    margin-bottom: 22px;
+    margin-top: 10px;
+    margin-bottom: 18px;
   }
   .footer {
-    font-size: 0.92rem;
-    padding: 20px 0 14px 0;
+    font-size: 0.88rem;
+    padding: 18px 0 10px 0;
   }
 }
-
