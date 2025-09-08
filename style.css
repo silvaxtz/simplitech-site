@@ -154,29 +154,6 @@ body {
   font-weight: 700;
 }
 
-/* SOBRE A EMPRESA */
-.about {
-  background: rgba(255,255,255,0.09);
-  border-radius: 16px;
-  border: 2px solid rgba(255,255,255,0.13);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-top: 12px;
-  margin-bottom: 22px;
-  padding: 16px 10px;
-  width: 100%;
-  color: #fff;
-}
-.about h2 {
-  font-size: 1.14rem;
-  margin-bottom: 6px;
-}
-.about p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 0;
-  color: #eafff3;
-}
-
 /* RODAPÉ */
 .footer {
   width: 100%;
@@ -189,5 +166,6 @@ body {
   background: none;
   border: none;
 }
+
 
 
