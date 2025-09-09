@@ -127,7 +127,7 @@ body {
   color: #fff;
 }
 
-/* Texto explicativo dentro do card */
+/* Texto explicativo dentro do card - ESCONDIDO por padrão */
 .service-desc {
   margin-top: 10px;
   font-size: 1rem;
@@ -137,6 +137,19 @@ body {
   padding: 8px 6px;
   width: 100%;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Quando card está ativo, mostra o texto */
+.service-card.active .service-desc {
+  opacity: 1;
+  max-height: 200px;
+  pointer-events: auto;
+  transition: opacity 0.3s, max-height 0.3s;
 }
 
 /* FRASE FINAL */
@@ -167,3 +180,4 @@ body {
   background: none;
   border: none;
 }
+
